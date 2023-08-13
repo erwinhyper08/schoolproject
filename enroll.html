@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="enroll.css">
+    <link rel="stylesheet" href="about-us.css">
+    
+    <title>Tohoku University</title>
+    
+</head>
+<body>
+    <nav>
+        <img src="header_logo.png" alt="logo" width="40px" height="55px" style="margin-right: 5px;">
+    <a href="school.html">Tohoku University</a>
+    <div class="nav-links" id="navlinks">
+        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="school.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="http://www.tohoku.ac.jp/en/international_affairs/index.html" target="_blank">Student Gallery</a></li>
+
+          <li><a href="https://www.insc.tohoku.ac.jp/english/degree/" target="_blank">Courses</a></li>
+          
+          <li><a href="http://www.tohoku.ac.jp/en/about/map_directions.html" target="_blank">Contact</a></li>
+          <li id="enroll-button"><a href="enroll.html" target="_blank">Enroll Now</a></li>
+      </ul>
+        
+    </div>
+    <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <section>
+    <div class="fillup-form-wrapper">
+      <div class="fillup-form">
+        <h1>Create an Account</h1>
+        <input type="email" class="fill-up" name="email-address" placeholder="Input email adress"><br>
+        <input type="password" class="fill-up" name="email-address" placeholder="Input password"><br>
+        <div id="termsandagreement">
+        <input type="checkbox" id="terms-agreement" name="terms&agreement" value="terms&agreement">
+        <label for="vehicle1" id="terms-agreement"> I agree to the Terms & Conditions, including the collection, use, and sharing of data. I understand that the collection and use of these data, which may include personal information and sensitive personal information, shall be in accordance with the Data Privacy Act of 2012.</label>
+        <br></div>  
+        <input type="submit" value="Sign-up" id="submit">
+      </div>
+      
+        <h3>or sign-up with:</h3>
+        <div class="signup-buttons">
+          <a href="https://www.facebook.com/login/" target="_blank"><img src="fb.jpg" alt="facebook"></a>
+          <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&ifkv=AXo7B7V7Sd4RPq7kpF6MZPcXl8VDjLpG4sOl3GV1pBs2VAtwI-GC5_0o7m4QQ1-v8miyP-fTBv3t&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-2147307212%3A1691821448252611" target="_blank"><img src="google.jpg" alt="google"></a>
+      </div>
+    </div>
+    
+    </section>
+
+    <!--contacts-->
+    <section>
+      <div class="contacts-wrapper">
+        <div >
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <footer>
+    <div class="footer"><p>&copy;2023 Tohoku University</p>
+    </div>
+    </footer>
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

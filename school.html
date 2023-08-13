@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Tohoku University</title>
+    
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <img src="header_logo.png" alt="logo" width="40px" height="40px">
+        <a href="school.html">Tohoku University</a>
+        <div class="nav-links" id="navlinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="http://www.tohoku.ac.jp/en/international_affairs/index.html">Student Gallery</a></li>
+                <li><a href="https://www.insc.tohoku.ac.jp/english/degree/" target="_blank">Courses</a></li>
+                <li><a href="http://www.tohoku.ac.jp/en/about/map_directions.html" target="_blank">Contact</a></li>
+                <li id="enroll-button"><a href="enroll.html" target="_blank">Enroll Now</a></li>
+            </ul>
+            
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        <div class="text-box">
+            <img class="navbar" src="home-image.png"> 
+        <h1>Welcome to Tohoku University</h1>
+        <p>A leading institutions, developing 
+            future leaders through academic excellence and inspiring, innovative research.</p>
+        <button id="enroll"><a href="enroll.html" id="enroll1">Enroll Now</a></button>
+        </div>
+    </section>
+    <footer>
+        <div class="footer"><p>&copy;2023 Tohoku University</p>
+        </div>
+        </footer>
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about-us.css">
+    
+    <title>Tohoku University</title>
+    
+</head>
+<body>
+    <nav>
+        <img src="header_logo.png" alt="logo" width="40px" height="55px" style="margin-right: 5px;">
+    <a href="school.html">Tohoku University</a>
+    <div class="nav-links" id="navlinks">
+        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="school.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="http://www.tohoku.ac.jp/en/international_affairs/index.html" target="_blank">Student Gallery</a></li>
+
+            <li><a href="https://www.insc.tohoku.ac.jp/english/degree/" target="_blank">Courses</a></li>
+            
+            <li><a href="http://www.tohoku.ac.jp/en/about/map_directions.html" target="_blank">Contact</a></li>
+            <li id="enroll-button"><a href="enroll.html" target="_blank">Enroll Now</a></li>
+        </ul>
+        
+    </div>
+    <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <section>
+    <div class="about_us-section">
+        <div class="about-us-wrapper1">
+            <h1>About Us</h1>
+        <div class="about-us-image">
+            <img src="about-us-image.jpg" id="about-us-image1">
+        </div>
+        <p>In 1911, Vice Minister of Education Masataro Sawayanagi, moved to Sendai to become Tohoku University's first president.
+            Sawayanagi firmly believed that academic research should be integrated with education. He also believed that a university
+            should not discriminate based on class or gender.
+            
+            
+            
+            Following this principle, Tohoku University accepted graduates from technical and higher normal schools, and despite
+            opposition from the government at that time, became Japan’s first university to admit female students in 1913.</p>
+        </div>
+    <div class="about-us-main-wrapper2">
+        <div class="about-us-wrapper2">
+            <img src="about-us-image2.jpg" id="about-us-image2">
+            <p><strong>Tohoku University</strong> attracts students from all over the world with diverse language and cultural backgrounds. Through a variety of learning and international exchange activities, we hope you will acquire an international mindset, become familiar with Japanese society and culture, and lead a fulfilling study abroad experience.<br><br>
+
+            <span class="numbers">1</span> <span class="about-us-header">Enroll trough our website</span><br><br>
+            <span class="paragraph">Create your very own profile and complete our quick self-assessment test.</span><br><br>
+
+            <span class="numbers">2</span> <span class="about-us-header">Choose Program/Course</span><br><br>
+            <span class="paragraph">We offer different courses that fits your feild of passion and interests.</span><br><br>
+
+            <span class="numbers">3</span> <span class="about-us-header">Learn through our Hybrid Learning System</span><br><br>
+            <span class="paragraph">Educators teach remote and in-person students at the same time using <span class="paragraph">tools like video conferencing hardware and software.</span></span><br><br>
+            
+            </p>
+        </div>
+        </div>
+    </div>
+        
+    </div>
+    </section>
+
+        
+    </section>
+    <footer>
+    <div class="footer"><p>&copy;2023 Tohoku University</p>
+    </div>
+    </footer>
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
